@@ -10,7 +10,7 @@
 git clone https://github.com/ASNProject/palm_oil_ripeness_detection.git
 ```
 
-- Install requirements.txt (waiting)
+- Install requirements.txt
 ```commandline
 pip install -r requirements.txt
 ```
