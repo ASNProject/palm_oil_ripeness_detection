@@ -2,7 +2,7 @@
 ### Feature
 - [x] Ripeness Palm Oil Using HSV Method
 - [ ] Capture camera using Raspberry Pi 4 camera
-- [ ] Send classification using Telegram
+- [x] Send classification using Telegram
 
 ### Run Project
 - Clone Project
