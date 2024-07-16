@@ -1,7 +1,7 @@
 ## Palm Oil Ripeness Detection
 Python Version
 ```commandline
-3.10.6
+'3.10.6'
 ```
 ### Feature
 - [x] Ripeness Palm Oil Using HSV Method
