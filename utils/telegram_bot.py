@@ -1,8 +1,8 @@
 import telegram
 import asyncio
 
-TOKEN = "7261947544:AAFTGs0bnyuBEBIWydw9oL5RCZP65YGHpg0"  # YOUR BOT TOKEN
-CHAT_ID = '1587088624'
+TOKEN = "7261947544:AAFTGs0bnyuBEBIWydw9oL5RCZP65YGHpg0"  # CHANGE YOUR BOT TOKEN
+CHAT_ID = '1587088624'  # CHANGE YOUR CHAT ID (Search Get My ID in Telegram)
 
 bot = telegram.Bot(token=TOKEN)
 
