@@ -43,7 +43,8 @@ a. Update Ripe HSV value:
 python hsv_ripe.py
 ```
 - Update HSV value using slide the trackbar
-  <img width="400" alt="Screenshot 2024-07-17 at 09 51 53" src="https://github.com/user-attachments/assets/8e4e3350-54ab-4b81-b607-2fd5ecb78046"></br>
+  
+  <img width="400" alt="Screenshot 2024-07-17 at 09 51 53" src="https://github.com/user-attachments/assets/8e4e3350-54ab-4b81-b607-2fd5ecb78046">
 
 - Save data with press ESC
 
@@ -54,7 +55,8 @@ b. Update Half-Ripe HSV value:
 python hsv_half_ripe.py
 ```
 - Update HSV value using slide the trackbar
-  <img width="400" alt="Screenshot 2024-07-17 at 09 52 44" src="https://github.com/user-attachments/assets/fe051d15-786d-4b3d-a55a-5becce17e7f5"></br>
+  
+  <img width="400" alt="Screenshot 2024-07-17 at 09 52 44" src="https://github.com/user-attachments/assets/fe051d15-786d-4b3d-a55a-5becce17e7f5"><
 
 - Save data with press ESC
 
@@ -65,5 +67,7 @@ c. Update Unripe HSV value:
 python hsv_unripe.py
 ```
 - Update HSV value using slide the trackbar
-  <img width="400" alt="Screenshot 2024-07-17 at 09 53 16" src="https://github.com/user-attachments/assets/3f1904a6-8bb6-467f-b252-cb6b23af5efe"></br>
+  
+  <img width="400" alt="Screenshot 2024-07-17 at 09 53 16" src="https://github.com/user-attachments/assets/3f1904a6-8bb6-467f-b252-cb6b23af5efe">
+  
 - Save data with press ESC
