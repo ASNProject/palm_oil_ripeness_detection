@@ -27,18 +27,18 @@ data = read_json(output_file)
 
 # Jika tidak ada data matang, inisialisasi dengan data kosong
 if 'matang' not in data:
-    data['matang'] = {"H": 0, "S": 0, "V": 0}
+    data['matang'] = {"LH": 0, "LS": 0, "LV": 0, "UH": 0, "US": 0, "UV": 0}
 
 # Jika tidak ada data setengah_matang, inisialisasi dengan data kosong
 if 'setengah_matang' not in data:
-    data['setengah_matang'] = {"H": 0, "S": 0, "V": 0}
+    data['setengah_matang'] = {"LH": 0, "LS": 0, "LV": 0, "UH": 0, "US": 0, "UV": 0}
 
 # Jika tidak ada data belum_matang, inisialisasi dengan data kosong
 if 'belum_matang' not in data:
-    data['belum_matang'] = {"H": 0, "S": 0, "V": 0}
+    data['belum_matang'] = {"LH": 0, "LS": 0, "LV": 0, "UH": 0, "US": 0, "UV": 0}
 
 # Baca gambar (UBAH SESUAI KEBUTUHAN)
-image = cv2.imread('assets/images/kelapa_sawit.jpg')
+image = cv2.imread('assets/images/setengah_matang.jpg')
 
 # Konversi gambar dari BGR ke HSV
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -77,9 +77,12 @@ while True:
     mean_hsv = cv2.mean(hsv_image, mask=mask)
 
     # Perbarui data dengan nilai rata-rata HSV
-    data['setengah_matang']["H"] = mean_hsv[0]
-    data['setengah_matang']["S"] = mean_hsv[1]
-    data['setengah_matang']["V"] = mean_hsv[2]
+    data['setengah_matang']["LH"] = lh
+    data['setengah_matang']["LS"] = ls
+    data['setengah_matang']["LV"] = lv
+    data['setengah_matang']["UH"] = uh
+    data['setengah_matang']["US"] = us
+    data['setengah_matang']["UV"] = uv
 
     # Tampilkan gambar asli dan hasil
     # cv2.imshow('Original Image', image)

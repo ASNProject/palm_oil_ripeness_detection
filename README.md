@@ -32,6 +32,10 @@ pip install -r requirements.txt
 python main.py
 ```
 
+#### Screenshoot
+
+
+
 #### Configuration HSV
 
 To adjust value of HSV (ripe, half ripe, and unripe) follow this steps:

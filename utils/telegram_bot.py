@@ -1,45 +1,11 @@
-import telegram
-import asyncio
+import requests
 
 TOKEN = "7261947544:AAFTGs0bnyuBEBIWydw9oL5RCZP65YGHpg0"  # CHANGE YOUR BOT TOKEN
 CHAT_ID = '1587088624'  # CHANGE YOUR CHAT ID (Search Get My ID in Telegram)
 
-bot = telegram.Bot(token=TOKEN)
 
+def send_message(message):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={f'Hasil Klasifikasi: {message}'}"
 
-async def send_message(text):
-    async with bot:
-        await bot.send_message(text=text, chat_id=CHAT_ID)
-
-
-async def send_document(document):
-    async with bot:
-        await bot.send_document(document=document, chat_id=CHAT_ID)
-
-
-async def send_photo(photo):
-    async with bot:
-        await bot.send_photo(photo=photo, chat_id=CHAT_ID)
-
-
-async def send_video(video):
-    async with bot:
-        await bot.send_video(video=video, chat_id=CHAT_ID)
-
-
-async def main():
-    # Sending a message
-    await send_message(text='Hi World!, How are you?')
-
-    # # Sending a document
-    # await send_document(document=open('/path/to/document.pdf', 'rb'), chat_id=chat_id)
-    #
-    # # Sending a photo
-    # await send_photo(photo=open('/path/to/photo.jpg', 'rb'), chat_id=chat_id)
-    #
-    # # Sending a video
-    # await send_video(video=open('path/to/video.mp4', 'rb'), chat_id=chat_id)
-
-
-if __name__ == '__main__':
-    asyncio.run(main())
+    r = requests.get(url)
+    print(r.json())
