@@ -5,6 +5,7 @@ Python Version
 ```
 ### Feature
 - [x] Ripeness Palm Oil Using HSV Method
+- [x] Capture with webcam
 - [ ] Capture camera using Raspberry Pi 4 camera
 - [x] Send classification using Telegram
 
@@ -34,7 +35,7 @@ python main.py
 
 #### Screenshoot
 
-
+<img width="854" alt="Screenshot 2024-07-17 at 16 54 17" src="https://github.com/user-attachments/assets/04548c6f-22b2-4714-af6c-ffb7fc3cf496">
 
 #### Configuration HSV
 
