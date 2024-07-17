@@ -31,3 +31,34 @@ pip install -r requirements.txt
 ```commandline
 python main.py
 ```
+
+#### Configuration HSV
+
+To adjust value of HSV (ripe, half ripe, and unripe) follow this steps:
+
+a. Update Ripe HSV value:
+
+- Open this program
+```commandline
+python hsv_ripe.py
+```
+- Update HSV value using slide the trackbar
+- Save data with press ESC
+
+b. Update Half-Ripe HSV value:
+
+- Open this program
+```commandline
+python hsv_half_ripe.py
+```
+- Update HSV value using slide the trackbar
+- Save data with press ESC
+
+c. Update Unripe HSV value:
+
+- Open this program
+```commandline
+python hsv_unripe.py
+```
+- Update HSV value using slide the trackbar
+- Save data with press ESC
