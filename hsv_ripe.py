@@ -38,7 +38,7 @@ if 'belum_matang' not in data:
     data['belum_matang'] = {"LH": 0, "LS": 0, "LV": 0, "UH": 0, "US": 0, "UV": 0}
 
 # Baca gambar (UBAH SESUAI KEBUTUHAN)
-image = cv2.imread('assets/images/matang.jpg')
+image = cv2.imread('assets/images/images.jpg')
 
 # Konversi gambar dari BGR ke HSV
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
