@@ -13,7 +13,7 @@ class CameraApp:
         self.hsv_ranges = None
         self.window = window
         self.window.title("Color Detection")
-        self.window.geometry("1280x480")  # Menyesuaikan ukuran window untuk dua kamera
+        self.window.geometry("640x480")  # Menyesuaikan ukuran window untuk dua kamera
 
         # Membuka dua kamera
         self.cap1 = cv2.VideoCapture(0)
@@ -22,9 +22,9 @@ class CameraApp:
         # Label untuk menampilkan video dari kedua kamera
         self.label1 = tk.Label(window)
         self.label1.pack(side=tk.LEFT, padx=10, pady=10, fill=tk.BOTH, expand=True)
-
-        self.label2 = tk.Label(window)
-        self.label2.pack(side=tk.RIGHT, padx=10, pady=10, fill=tk.BOTH, expand=True)
+        #
+        # self.label2 = tk.Label(window)
+        # self.label2.pack(side=tk.RIGHT, padx=10, pady=10, fill=tk.BOTH, expand=True)
 
         # Ukuran maksimum untuk gambar
         self.max_width = 640
@@ -52,13 +52,13 @@ class CameraApp:
             img1 = self.convert_to_tk_image(frame1)
             self.label1.imgtk = img1
             self.label1.configure(image=img1)
-
-        if ret2:
-            # Proses dan tampilkan frame dari kamera 2
-            frame2 = self.hsv_process(frame2)
-            img2 = self.convert_to_tk_image(frame2)
-            self.label2.imgtk = img2
-            self.label2.configure(image=img2)
+        #
+        # if ret2:
+        #     # Proses dan tampilkan frame dari kamera 2
+        #     frame2 = self.hsv_process(frame2)
+        #     img2 = self.convert_to_tk_image(frame2)
+        #     self.label2.imgtk = img2
+        #     self.label2.configure(image=img2)
 
         # Panggil fungsi ini lagi setelah 10 milidetik
         self.label1.after(10, self.show_frame)
